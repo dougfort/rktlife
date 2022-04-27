@@ -1,6 +1,8 @@
 #lang racket/base
 
-;; a single cell at position x y
+; a single cell at position x y
+
+(provide cell cell-x cell-y)
+
 (struct cell (x y)
   #:transparent)
-(provide cell cell-x cell-y)
