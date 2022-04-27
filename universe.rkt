@@ -6,7 +6,7 @@
  universe
  universe-width
  universe-height
- neighbors)
+ step)
 
 (module+ test
   (require rackunit))
@@ -92,10 +92,3 @@
   (check-equal? (compute-new-y 25 23  1) 24)
   (check-equal? (compute-new-y 25 24  0) 24)
   (check-equal? (compute-new-y 25  0  0)  0))
-
-
-(define u (universe 80 25))
-
-(define c (cell 4 4))
-
-(define l (list (cell 1 0) (cell 1 1) (cell 1 2)))
